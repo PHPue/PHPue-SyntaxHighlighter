@@ -1,0 +1,14 @@
+{
+  "name": "pvue-syntax",
+  "displayName": "PVue Syntax",
+  "version": "0.0.1",
+  "engines": {"vscode": "^1.60.0"},
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "grammars": [{
+      "path": "./syntaxes/injections.json",
+      "scopeName": "pvue.injections",
+      "injectTo": ["text.html.basic"]
+    }]
+  }
+}

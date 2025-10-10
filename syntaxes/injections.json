@@ -1,0 +1,23 @@
+{
+  "injections": {
+    "text.html.basic": {
+      "patterns": [
+        {
+          "begin": "<script>",
+          "end": "</script>",
+          "contentName": "source.php"
+        },
+        {
+          "begin": "<cscript>",
+          "end": "</cscript>",
+          "contentName": "source.js"
+        },
+        {
+          "begin": "\\{\\{",
+          "end": "\\}\\}",
+          "contentName": "source.php"
+        }
+      ]
+    }
+  }
+}

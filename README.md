@@ -16,6 +16,6 @@ xcopy PHPue-SyntaxHighlighter %USERPROFILE%\.vscode\extensions\pvue-syntax-0.0.1
 ```
 
 # Or PowerShell
-```PowerShell
+```powershell
 Copy-Item -Path "PHPue-SyntaxHighlighter" -Destination "$env:USERPROFILE\.vscode\extensions\pvue-syntax-0.0.1" -Recurse
 ```

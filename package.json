@@ -2,13 +2,28 @@
   "name": "pvue-syntax",
   "displayName": "PVue Syntax",
   "version": "0.0.1",
-  "engines": {"vscode": "^1.60.0"},
+  "engines": { "vscode": "^1.60.0" },
   "categories": ["Programming Languages"],
   "contributes": {
-    "grammars": [{
-      "path": "./syntaxes/injections.json",
-      "scopeName": "pvue.injections",
-      "injectTo": ["text.html.basic"]
-    }]
+    "languages": [
+      {
+        "id": "pvue",
+        "aliases": ["PVue", "pvue"],
+        "extensions": [".pvue"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "path": "./syntaxes/pvue.tmLanguage.json",
+        "scopeName": "source.pvue",
+        "language": "pvue"
+      },
+      {
+        "path": "./syntaxes/injections.json",
+        "scopeName": "pvue.injections",
+        "injectTo": ["source.pvue", "text.html.basic"]
+      }
+    ]
   }
 }

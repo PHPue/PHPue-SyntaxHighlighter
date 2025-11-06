@@ -1,16 +1,36 @@
 {
   "injections": {
-    "text.html.basic": {
+    "source.pvue": {
       "patterns": [
         {
           "begin": "<script>",
+          "beginCaptures": { "0": { "name": "punctuation.definition.tag.begin.pvue" } },
           "end": "</script>",
-          "contentName": "source.php"
+          "endCaptures": { "0": { "name": "punctuation.definition.tag.end.pvue" } },
+          "name": "meta.embedded.script.pvue",
+          "patterns": [
+            { "include": "source.php" }
+          ]
         },
         {
           "begin": "<cscript>",
+          "beginCaptures": { "0": { "name": "punctuation.definition.tag.begin.cscript.pvue" } },
           "end": "</cscript>",
-          "contentName": "source.js"
+          "endCaptures": { "0": { "name": "punctuation.definition.tag.end.cscript.pvue" } },
+          "name": "meta.embedded.cscript.pvue",
+          "patterns": [
+            { "include": "source.js" },
+            {
+              "begin": "<\\?(?:php)?",
+              "end": "\\?>",
+              "contentName": "source.php.embedded"
+            },
+            {
+              "begin": "\\{\\{",
+              "end": "\\}\\}",
+              "contentName": "source.php.embedded"
+            }
+          ]
         },
         {
           "begin": "\\{\\{",

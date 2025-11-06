@@ -1,0 +1,9 @@
+{
+  "name": "PVue",
+  "scopeName": "source.pvue",
+  "fileTypes": ["pvue"],
+  "patterns": [
+    { "include": "text.html.basic" }
+  ],
+  "uuid": "11111111-1111-1111-1111-111111111111"
+}

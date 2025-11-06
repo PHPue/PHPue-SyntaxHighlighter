@@ -1,6 +1,6 @@
 {
   "files.associations": {
-    "*.pvue": "html"
+    "*.pvue": "pvue"
   },
   "emmet.includeLanguages": {
     "pvue": "html"

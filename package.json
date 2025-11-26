@@ -18,11 +18,6 @@
         "path": "./syntaxes/pvue.tmLanguage.json",
         "scopeName": "source.pvue",
         "language": "pvue"
-      },
-      {
-        "path": "./syntaxes/injections.json",
-        "scopeName": "pvue.injections",
-        "injectTo": ["source.pvue", "text.html.basic"]
       }
     ]
   }

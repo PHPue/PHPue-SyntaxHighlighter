@@ -3,7 +3,106 @@
   "scopeName": "source.pvue",
   "fileTypes": ["pvue"],
   "patterns": [
-    { "include": "text.html.basic" }
-  ],
-  "uuid": "11111111-1111-1111-1111-111111111111"
+    {
+      "name": "meta.tag.script.pvue",
+      "begin": "<script>",
+      "beginCaptures": {
+        "0": { "name": "entity.name.tag.script.pvue" }
+      },
+      "end": "</script>",
+      "endCaptures": {
+        "0": { "name": "entity.name.tag.script.pvue" }
+      },
+      "contentName": "source.php",
+      "patterns": [
+        { "include": "source.php" }
+      ]
+    },
+    {
+      "name": "meta.tag.cscript.pvue",
+      "begin": "<cscript>",
+      "beginCaptures": {
+        "0": { "name": "entity.name.tag.cscript.pvue" }
+      },
+      "end": "</cscript>",
+      "endCaptures": {
+        "0": { "name": "entity.name.tag.cscript.pvue" }
+      },
+      "contentName": "source.js",
+      "patterns": [
+          { "include": "source.js" },
+          {
+          "name": "meta.embedded.php.pvue",
+          "begin": "<\\?(?:php|=)?",
+          "end": "\\?>",
+          "contentName": "source.php",
+          "patterns": [
+            { "include": "source.php" }
+          ]
+        },
+        {
+          "name": "meta.embedded.php.pvue",
+          "begin": "\\{\\{",
+          "end": "\\}\\}",
+          "contentName": "source.php",
+          "patterns": [
+            { "include": "source.php" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "meta.tag.template.pvue",
+      "begin": "<template>",
+      "beginCaptures": {
+        "0": { "name": "entity.name.tag.template.pvue" }
+      },
+      "end": "</template>",
+      "endCaptures": {
+        "0": { "name": "entity.name.tag.template.pvue" }
+      },
+      "patterns": [
+        { "include": "text.html.basic" },
+        {
+          "name": "meta.embedded.php.pvue",
+          "begin": "<\\?(?:php|=)?",
+          "end": "\\?>",
+          "contentName": "source.php",
+          "patterns": [
+            { "include": "source.php" }
+          ]
+        },
+        {
+          "name": "meta.embedded.php.pvue",
+          "begin": "\\{\\{",
+          "end": "\\}\\}",
+          "contentName": "source.php",
+          "patterns": [
+            { "include": "source.php" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "meta.embedded.php.pvue",
+      "begin": "<\\?(?:php|=)?",
+      "end": "\\?>",
+      "contentName": "source.php",
+      "patterns": [
+        { "include": "source.php" }
+      ]
+    },
+    {
+      "name": "meta.embedded.php.pvue",
+      "begin": "\\{\\{",
+      "end": "\\}\\}",
+      "contentName": "source.php", 
+      "patterns": [
+        { "include": "source.php" }
+      ]
+    },
+    {
+      "include": "text.html.basic"
+    }
+  ]
 }

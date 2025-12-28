@@ -1,0 +1,53 @@
+{
+  "comments": {
+    "lineComment": "//",
+    "blockComment": ["/*", "*/"]
+  },
+
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["<", ">"]
+  ],
+
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "<", "close": ">" },
+    { "open": "\"", "close": "\"" },
+    { "open": "'", "close": "'" },
+    { "open": "`", "close": "`" }
+  ],
+
+  "autoCloseBefore": ";:.,=}])>` \n\t",
+
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["<", ">"],
+    ["\"", "\""],
+    ["'", "'"],
+    ["`", "`"]
+  ],
+
+  "colorizedBracketPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+
+  "indentationRules": {
+    "increaseIndentPattern": "(<(?!(?:area|base|br|col|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)\\b)[A-Za-z0-9\\-]+(?:(?!/)>)[^>]*>|\\{[^}\"']*$)",
+    "decreaseIndentPattern": "^\\s*(</[A-Za-z0-9\\-]+>|\\})"
+  },
+
+  "folding": {
+    "markers": {
+      "start": "^\\s*//\\s*#?region\\b",
+      "end": "^\\s*//\\s*#?endregion\\b"
+    }
+  }
+}

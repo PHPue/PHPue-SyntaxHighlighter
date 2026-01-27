@@ -1,7 +1,9 @@
 {
+  "icon": "./logo-large.webp",
   "name": "pvue-syntax",
-  "displayName": "PVue Syntax",
+  "displayName": "PHPue Syntax Highlighter",
   "version": "0.0.1",
+  "publisher": "PHPue",
   "engines": { "vscode": "^1.60.0" },
   "categories": ["Programming Languages"],
   "contributes": {
@@ -20,5 +22,9 @@
         "language": "pvue"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PHPue/PHPue-SyntaxHighlighter"
   }
 }

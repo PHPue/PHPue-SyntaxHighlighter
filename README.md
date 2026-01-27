@@ -1,4 +1,28 @@
+# PVue Syntax
+Syntax highlighting support for PVue files.
+
+## Features
+- Syntax highlighting for `.pvue` files
+- Language configuration for PVue
+
+## Release Notes
+See [CHANGELOG.md](CHANGELOG.md)
+
 PHPue is still early development!
+
+## Install for Development
+```
+# Clone repository
+git clone <your-repo-url>
+cd pvue-syntax
+
+# Package locally
+npm install -g @vscode/vsce
+vsce package
+
+# Install the VSIX
+code --install-extension pvue-syntax-*.vsix
+```
 
 IF you love PHPue Framework, then please help develop better syntax highlighting!
 

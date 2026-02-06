@@ -1,6 +1,17 @@
 # PVue Syntax
 Syntax highlighting support for PVue files.
 
+## How to Install?
+1. Download Our Extension on VSCode Marketplace:
+   https://marketplace.visualstudio.com/items?itemName=PHPue.pvue-syntax
+   (OR Use VSCode Extension Search)
+   **PHPue Syntax Highlighter**
+
+2. Install the Extension.
+
+3. You are done. All `.pvue` files are now highlighted correctly!
+
+
 ## Features
 - Syntax highlighting for `.pvue` files
 - Language configuration for PVue
